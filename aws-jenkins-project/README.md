@@ -1,17 +1,4 @@
 ![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/aws-jenkins-project/Screenshots/Presentation.gif)
-## Overview
-This project aims to automate the deployment of a Flask web application and PostgreSQL database using Docker containers. The deployment process is orchestrated through Terraform for infrastructure provisioning, Ansible for server configuration, and Jenkins for continuous integration and deployment (CI/CD) with Kubernetes for container orchestration.
-
-
-## Tools
-
-- GIT
-- Docker
-- Kubernetes
-- Terraform
-- AWS 
-- Ansible
-- Jenkins
 
 ---
 ## Project Structure
@@ -26,17 +13,14 @@ The project is structured into multiple phases, each addressing a specific aspec
 
 ## Step-by-Step Deployment
 
-### 1. Getting the Flask App and MySQL Database
 
-- Cloning the Flask app and PostgreSQL database from [GitHub repository](https://github.com/uym2/MySQL-and-Python).
-
-### 2. Dockerizing the Application and Database
+### 1. Dockerizing the Application and Database
 
 - Writing Dockerfiles for Flask app and PostgreSQL database.
 - Creating a Docker Compose file to run both containers locally for testing.
 - For more details: [Docker](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Docker)
 
-### 3. Setting Up the AWS Infrastructure with Terraform
+### 2. Setting Up the AWS Infrastructure with Terraform
 
 - Creating a VPC with 2 public and 2 private subnets.
 - Configuring Internet Gateway (IGW) and Network Address Translation (NAT) Gateways.
@@ -45,18 +29,18 @@ The project is structured into multiple phases, each addressing a specific aspec
 - Provisioning an Amazon EKS cluster with worker nodes in private subnets.
 - For more details: [Terraform](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Terraform)
 
-### 4. Configuring EC2 Instance with Ansible
+### 3. Configuring EC2 Instance with Ansible
 
 - Installing Jenkins on the EC2 instance using Ansible.
 - Setting up AWS CLI, kubectl, and Docker using Ansible playbooks.
 - For more details: [Ansible](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Ansible)
 
-### 5. Creating Kubernetes Manifests
+### 4. Creating Kubernetes Manifests
 
 - Defining Kubernetes Deployment, Services, StatefulSet, ConfigMap, Secrets, Ingress, PersistentVolume (PV), and PersistentVolumeClaim (PVC) for the Flask app and PostgreSQL database.
 - For more details: [Kubernetes](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Kubernetes)
 
-### 6. Jenkins Pipeline Setup
+### 5. Jenkins Pipeline Setup
 
 - Installing the **AWS Steps** plugin in Jenkins.
 - Configuring GitHub, AWS, and cluster credentials in Jenkins.
@@ -69,7 +53,6 @@ The project is structured into multiple phases, each addressing a specific aspec
 
 #### This comprehensive DevOps infrastructure deployment project showcases the integration of various tools and technologies to achieve a seamless end-to-end deployment process. By following the step-by-step guide, you have successfully created a robust pipeline for building, deploying, and managing a Flask web application and PostgreSQL database on AWS with Kubernetes. This project provides a strong foundation for scaling and enhancing your DevOps practices.
 
-#### Feel free to explore and optimize each component further and adapt the project to your specific needs. Happy deploying!
 
 
 
