@@ -1,3 +1,4 @@
+![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/aws-jenkins-project/Screenshots/Presentation.gif)
 ## Overview
 This project aims to automate the deployment of a Flask web application and PostgreSQL database using Docker containers. The deployment process is orchestrated through Terraform for infrastructure provisioning, Ansible for server configuration, and Jenkins for continuous integration and deployment (CI/CD) with Kubernetes for container orchestration.
 
