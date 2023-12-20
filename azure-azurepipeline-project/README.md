@@ -9,18 +9,18 @@ The project is meticulously organized to encompass various phases, each tailored
 - **Kubernetes**: Developed Kubernetes manifests tailored for Azure, dictating the deployment specifications for the Flask app and integration with Azure PostgreSQL on the AKS cluster.
 
 ---
-
 ### Azure DevOps CI/CD Pipeline Setup
-#### - Configured an Azure DevOps CI/CD pipeline for streamlined automation.
+Configured an Azure DevOps CI/CD pipeline for streamlined automation.
+
 #### - pipeline file: [azure-pipelines.yml](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/azure-pipelines.yml)
 #### - Install Terraform cli in Azure DevOps pipeline to run terraform commands [Terraform](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks)
 #### - Service Connections needed in pipeline 
 ![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/project-service-connections.png)
-#### -  First Stage: Apply Terraform files to build Azure Resource Group, Azure Kubernetes Service 'AKS', and Azure PostgreSQL database
+#### `First Stage` Apply Terraform files to build Azure Resource Group, Azure Kubernetes Service 'AKS', and Azure PostgreSQL database
 ![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/created%20resource%20group.png)
-#### - Second stage: Build Docker image and push it to DockerHub Repo
+#### `Second stage` Build Docker image and push it to DockerHub Repo
 ![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/Docker%20Hub.png)
-#### - Last stage: Deploy Kubernetes manifists to the AKS
+#### `Last stage` Deploy Kubernetes manifists to the AKS
   ![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/AKS-resources.png)
 ----
 ## Conclusion
