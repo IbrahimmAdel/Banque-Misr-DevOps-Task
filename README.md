@@ -1,7 +1,7 @@
 # DevOps Task 
 > In pursuit of optimal task execution, I have meticulously crafted two distinct versions, each employing different tools. These parallel implementations represent a comprehensive approach to addressing the same task, ensuring versatility and flexibility in achieving the desired outcomes.
 ## Version 1 overview
-#### This project aims to use Azure DevOps Pipelines for continuous integration and deployment (CI/CD) and Terraform for infrastructure provisioning on Microsoft Azure Cloud to deploy of a Flask web application using Docker containers and AKS cluster with PostgreSQL database
+#### This project aims to use Azure DevOps Pipelines for continuous integration and deployment (CI/CD) and Terraform for infrastructure provisioning on Microsoft Azure Cloud to deploy of a Flask web application using Docker containers and AKS cluster with PostgreSQL database.
 
 ### Tools
 * Azure DevOps
