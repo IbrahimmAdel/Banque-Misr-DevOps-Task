@@ -19,7 +19,7 @@ This project aims to automate the deployment of a Flask web application and MySQ
 
 The project is structured into multiple phases, each addressing a specific aspect of the infrastructure:
 
-- **Dockerization**: Creating Dockerfiles for the Flask app and MySQL database, along with a Docker Compose file for local testing.
+- **Dockerization**: Creating Dockerfiles for the Flask app and PostgreSQL database, along with a Docker Compose file for local testing.
 - **Terraform**: Defining infrastructure components such as VPC, subnets, EC2 instance, ECR repository, EKS cluster, and more.
 - **Ansible**: Automating the configuration of EC2 instance by installing Jenkins, AWS CLI, kubectl, and Docker.
 - **Kubernetes**: Creating Kubernetes manifests for deploying the Flask app and MySQL database on the EKS cluster.
@@ -29,11 +29,11 @@ The project is structured into multiple phases, each addressing a specific aspec
 
 ### 1. Getting the Flask App and MySQL Database
 
-- Cloning the Flask app and MySQL database from [GitHub repository](https://github.com/uym2/MySQL-and-Python).
+- Cloning the Flask app and PostgreSQL database from [GitHub repository](https://github.com/uym2/MySQL-and-Python).
 
 ### 2. Dockerizing the Application and Database
 
-- Writing Dockerfiles for Flask app and MySQL database.
+- Writing Dockerfiles for Flask app and PostgreSQL database.
 - Creating a Docker Compose file to run both containers locally for testing.
 - For more details: [Docker](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Docker)
 
@@ -54,7 +54,7 @@ The project is structured into multiple phases, each addressing a specific aspec
 
 ### 5. Creating Kubernetes Manifests
 
-- Defining Kubernetes Deployment, Services, StatefulSet, ConfigMap, Secrets, Ingress, PersistentVolume (PV), and PersistentVolumeClaim (PVC) for the Flask app and MySQL database.
+- Defining Kubernetes Deployment, Services, StatefulSet, ConfigMap, Secrets, Ingress, PersistentVolume (PV), and PersistentVolumeClaim (PVC) for the Flask app and PostgreSQL database.
 - For more details: [Kubernetes](https://github.com/IbrahimmAdel/Full-CICD-Project/tree/master/Kubernetes)
 
 ### 6. Jenkins Pipeline Setup
@@ -68,7 +68,7 @@ The project is structured into multiple phases, each addressing a specific aspec
 ----
 ## Conclusion
 
-#### This comprehensive DevOps infrastructure deployment project showcases the integration of various tools and technologies to achieve a seamless end-to-end deployment process. By following the step-by-step guide, you have successfully created a robust pipeline for building, deploying, and managing a Flask web application and MySQL database on AWS with Kubernetes. This project provides a strong foundation for scaling and enhancing your DevOps practices.
+#### This comprehensive DevOps infrastructure deployment project showcases the integration of various tools and technologies to achieve a seamless end-to-end deployment process. By following the step-by-step guide, you have successfully created a robust pipeline for building, deploying, and managing a Flask web application and PostgreSQL database on AWS with Kubernetes. This project provides a strong foundation for scaling and enhancing your DevOps practices.
 
 #### Feel free to explore and optimize each component further and adapt the project to your specific needs. Happy deploying!
 
