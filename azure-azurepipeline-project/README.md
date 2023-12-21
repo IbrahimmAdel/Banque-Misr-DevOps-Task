@@ -1,4 +1,4 @@
-![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/Project.png)
+![](https://github.com/IbrahimmAdel/Banque-Misr-DevOps-Task/blob/master/azure-azurepipeline-project/screenshots/Presentation.gif)
 ---
 ## Project Structure
 The project is meticulously organized to encompass various phases, each tailored to address specific elements within the infrastructure:
